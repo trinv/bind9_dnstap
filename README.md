@@ -101,6 +101,10 @@ dnstap-version "Unknown";
 };
 ```
 
+Create the user named (with nologin) to run the BIND9.11
+```
+useradd -s /sbin/nologin -d /usr/local/sbin/named -c "named" named
+```
 
 ### How to Read DNSTAP files
 ```

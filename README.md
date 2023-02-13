@@ -8,6 +8,8 @@ python-ply: ```apt install python-ply```
 
 OpenSSL: ```apt install libssl-dev```
 
+Install Libtool: ```apt install libtool```
+
 
 To build BIND with dnstap support you must ensure that the runtime libraries required by the dnstap sender (which will be embedded in BIND) are present. There are two nonstandard library packages that dnstap requires, and one of those depends in turn on a Google library package. These three packages are all available from github, and you must install them in this order:
 

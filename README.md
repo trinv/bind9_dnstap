@@ -93,7 +93,12 @@ options {
 
 //DNSTAP config
 
-dnstap {auth; resolver query;};
+dnstap {
+  auth; 
+  resolver query;
+  client response;
+  forwarder;
+};
 dnstap-output file "/etc/bind/test.dnstap";
 
 dnstap-identity "Test DNSTAP";

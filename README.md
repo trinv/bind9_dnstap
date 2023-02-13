@@ -117,7 +117,7 @@ useradd -s /sbin/nologin -d /usr/local/sbin/named -c "named" named
 nano /usr/lib/systemd/system/named.service
 ```
 
-** https://github.com/trinv/bind9_dnstap/blob/main/named.service **
+[named service] (https://github.com/trinv/bind9_dnstap/blob/main/named.service)
 
 ### How to Read DNSTAP files
 ```

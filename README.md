@@ -133,9 +133,18 @@ dnstap-read /etc/bind/test.dnstap
 ```
 
 
+### How to fix "the damm error" : error while loading shared libraries: libprotobuf-c.so.1: cannot open shared object file: No such file or directory!
 
+Added 2 linse in this file
+```
+vi /etc/ld.so.conf
+```
+```
+/usr/local/lib
+ldconfig -v
+```
 
-
+### Restart named
 
 
 

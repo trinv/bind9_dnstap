@@ -112,12 +112,20 @@ Create the user named (with nologin) to run the BIND9.11
 ```
 useradd -s /sbin/nologin -d /usr/local/sbin/named -c "named" named
 ```
-## Run the named as a service
+
+### Make sur the permission of named directory
+```
+chown -R named:named /etc/bind
+```
+## [Run the named as a service](https://github.com/trinv/bind9_dnstap/blob/main/named.service)
 ```
 nano /usr/lib/systemd/system/named.service
+
+systemctl daemon-reload
+systemctl start named
+systemctl status named
 ```
 
-[named service](https://github.com/trinv/bind9_dnstap/blob/main/named.service)
 
 ### How to Read DNSTAP files
 ```
